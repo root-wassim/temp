@@ -53,8 +53,3 @@ Ce formulaire doit permettre de collecter :
 
 ---
 
-## 🧾 Livrables attendus
-- **`index.html`** : Le fichier HTML contenant le formulaire complet
-- **`style.css`** : La feuille de style CSS pour la mise en forme
-
----

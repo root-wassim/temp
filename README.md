@@ -58,10 +58,3 @@ Ce formulaire doit permettre de collecter :
 - **`style.css`** : La feuille de style CSS pour la mise en forme
 
 ---
-
-## 🧠 Rappel
-Veillez à :
-- **Valider votre HTML** sur le validateur W3C 
-- **Valider votre feuille de style** sur le validateur W3C.
-- **Respecter le rendu visuel** demandé dans `final_screenshot.png`.
-- **Indenter proprement** votre code pour une meilleure lisibilité.

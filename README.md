@@ -1,60 +1,79 @@
-# 🎬 TP5 - HTTP et FORMULAIRES (Inscription au club "CinéPass")
+# ⚙️ TP7 – PHP + MySQL : Persistance des données & Mini-application CRUD
 
 ## 🎯 Objectif du TP
-L'objectif de ce TP est de vous familiariser avec les **formulaires HTML** et les **serveurs Web locaux**.  
-Vous allez mettre en pratique ces notions à travers la **conception d'un formulaire d'inscription complet** pour un site appelé :
-> **« CinéPass »**
+L’objectif de ce TP est de vous familiariser avec **la persistance des données** en utilisant **PHP** et **MySQL**.  
+Vous allez mettre en pratique ces notions à travers **16 exercices progressifs**, allant de la configuration de l’environnement jusqu’à la réalisation complète d’une **mini-application CRUD**.
 
 ---
-## 📘 Contexte du projet
-**CinéPass** est un club de cinéma qui souhaite proposer un formulaire d'inscription en ligne pour ses nouveaux membres.  
-Ce formulaire doit permettre de collecter :
-- Les informations personnelles des membres
-- Leurs préférences d'abonnement
-- Leurs goûts cinématographiques
-- Leurs disponibilités et préférences de séances
 
----
 ## 📘 Ressources fournies
-- Le fichier **TP5.pdf** vous guidera **étape par étape** pour la réalisation de la mise en page.
+- Le fichier **`TP7_Bases_Données.pdf`** vous guide *étape par étape* dans la réalisation du TP.
+- Tous les scripts Python, SQL et doivent être **clairement commentés**, en indiquant le **numéro de slide du cours**.  
+  > Exemple :  
+  > `# Connexion MySQL (voir slide 32)`
+
+🛑 **Un code sans commentaire est automatiquement rejeté.**  
+🛑 **Les noms des IDs, classes, routes et variables doivent correspondre EXACTEMENT à ceux spécifiés dans chaque exercice.**
 
 ---
 
-## 🧭 Déroulement du TP
+## 🧭 Structure du TP
 
-1. **Accès à l’énoncé**
-   - L’énoncé complet du TP est déposé sur **GitHub**.
-   - Le lien de l’assignement est communiqué dans **Google Classroom**.
+### 1. Accès à l’énoncé
+- L’énoncé complet est disponible sur **GitHub**.  
+- Le lien de l’assignement GitHub Classroom est partagé sur **Google Classroom**.
 
-2. **Création de votre espace de travail**
-   - Acceptez l’assignement sur GitHub Classroom.
-   - Clonez ensuite votre dépôt individuel.
-   
-3. **Configuration de l'environnement**
-   - Installez et configurez Apache
-   - Créez le virtual host `cinepass.dz`
+### 2. Organisation des exercices
+- **Exercices 1 et 2** : Mise en place de l’environnement (PHP + MySQL).  
+- **Exercices 3 à 11** : Prise en main de MySQL (création BDD, tables, insertion, requêtes…).  
+- **Exercices 13 à 15** : Construction des **formulaires HTML** avec persistance MySQL.
+- **Exercice 16** : Mini-application CRUD complète avec persistance MySQL.
 
-4. **Réalisation**
-   - Complétez les fichiers **`index.html`** **`style.css`**.
-   - Respectez les consignes demandées dans le **TP5.pdf**.
-   - Respectez le rendu visuel de `final_screenshot.png`
-   - À l'ouverture, la page doit être **exactement identique** à `final_screenshot.png`
-   - Liste des icônes autorisées:
-	🎬 💡 👤 🎫 🥉 🥈 🥇 🎥 💥 😄 🎭 👻 🚀 💕 📹 📅 📎
+---
 
+## 🗄️ Base de données – Contraintes obligatoires
 
-5. **Soumission**
-   - Une fois le travail terminé :
-     ```bash
-     git add .
-     git commit -m "TP5 FORM terminé"
-     git push origin main
-     ```
+### 📌 Paramètres de connexion MySQL
+- **Host** : `localhost`  
+- **Port** : `3306`  
+- **User** : `root`  
+- **Password** : ``
+
+### 📌 Informations BDD (Exo 16)
+- **Base de données** : `db_persons` *(voir Exercice 4)*  
+- **Table** : `person` *(voir Exercice 6)*  
 
 ---
 
 ## 🧾 Livrables attendus
-- **`index.html`** : Le fichier HTML contenant le formulaire complet
-- **`style.css`** : La feuille de style CSS pour la mise en forme
+
+### 📌 Fichier principal
+- **app.py**
+
+## 🧾 Livrables attendus
+Vous devez remettre les fichiers suivants :
+
+- **index.html**
+- **formAdd.php**
+- **formUpdate.php**
+- **formDelete.php**
+- **addPerson.php**
+- **updatePerson.php**
+- **deletePerson.php**
+- **dataJson.php**
+- **style.css**
+
 
 ---
+
+## 🧠 Rappel avant soumission
+Avant de remettre votre travail :
+
+- Vérifiez la **connexion MySQL**.  
+- Testez toutes les **requêtes SQL**.   
+- Vérifiez :
+  - Le fonctionnement de toutes les routes.
+  - L’envoi des données via les formulaires.
+  - Le respect de la structure HTML/CSS demandée.
+  - La présence de **tous les commentaires obligatoires**.
+- Testez votre application dans le navigateur.
